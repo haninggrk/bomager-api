@@ -1,15 +1,15 @@
 import express, { Request, Response } from 'express';
-import { chromium } from "playwright";
+import { chromium, firefox } from "playwright";
 import { constValue } from "./helpers/const";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3606;
 const MAX_CONCURRENT_BROWSERS = 5;
 
 app.use(express.json());
 
 async function validateVoucher(voucher: string) {
-    const browser = await chromium.launch({ headless: false });
+    const browser = await firefox.launch({ headless: true });
     const context = await browser.newContext();
     const page = await context.newPage();
     
