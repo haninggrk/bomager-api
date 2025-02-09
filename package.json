@@ -6,7 +6,7 @@
   "scripts": {
     "buildWatch": "tsc --watch",
     "build": "tsc",
-    "start": "node --enable-source-maps .",
+    "start": "tsc && node --enable-source-maps .",
     "devStart": "nodemon --ignore config --enable-source-maps .",
     "dev": "concurrently \"npm run buildWatch\" \"npm run devStart\""
   },
@@ -14,8 +14,15 @@
   "author": "",
   "license": "",
   "devDependencies": {
+    "@types/express": "^5.0.0",
     "concurrently": "^8.2.2",
     "nodemon": "^3.1.0",
+    "playwright": "^1.50.1",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security"
   }
 }

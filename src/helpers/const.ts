@@ -1,0 +1,6 @@
+class constValue {
+    public static readonly VOUCHER_DETAIL_PAGE_URL = "https://secure.booking.com/book.html?aid=898224&label=hotel_details-XhD0dU%401738426725&sid=de64d99530508c7ca32043de7a0a9c11&basket_id=762caa3b-479b-4433-9584-aa5fdf318ca0&checkin=2026-05-30&checkout=2026-05-31&hostname=www.booking.com&hotel_id=235883&installment_count=1&interval=1&nr_rooms_23588308_88825665_0_2_0_555908=1&raf_cm_later=0&room1=A%2CA&rt_cheapest_search_price=920000&rt_num_blocks=21&rt_num_blocks_per_room=%7B%2223588309%22%3A3%2C%2223588310%22%3A3%2C%2223588312%22%3A3%2C%2223588314%22%3A3%2C%2223588308%22%3A3%2C%2223588315%22%3A3%2C%2223588313%22%3A3%7D&rt_num_rooms=7&rt_pageview_id=e9e0195633e70419&rt_pos_final=1.1&rt_pos_selected=1&rt_pos_selected_within_room=1&rt_relevance_metric_id=1d0cd60c-cf9d-44e8-85bb-3705fc1a5007&rt_selected_block_position=1&rt_selected_blocks_info=%7B%2223588308_88825665_0_2_0_555908%22%3A%7B%22rt_selected_block_position_in_rt%22%3A1%2C%22rt_selected_block_position_in_room_group%22%3A0%2C%22count%22%3A1%2C%22rt_room_symmetry_category%22%3A%22asymmetric%22%7D%7D&rt_selected_total_price=920000&srpvid=67c419539c7b01c1&stage=1&lang=en-us&soz=1&lang_changed=1";
+    public static readonly VOUCHER_VALIDATE_URL = "https://secure.booking.com/reward/validate_coupon"
+}
+
+export { constValue };
